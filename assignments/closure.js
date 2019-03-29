@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+const moduloNum = function(divisor) {
+  return function (dividend){
+    return dividend % divisor;
+  }
+}
 
+const moduloSix = moduloNum(6);
+const moduloNine = moduloNum(9)
+
+console.log(moduloSix(7));
+console.log(moduloNine(31));
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 

@@ -30,25 +30,45 @@ function getLength(arr, cb) {
   return cb(arr.length);
 }
 
-//Test if What I Did Will Work
+//Test of getLength
+getLength(items, function(param){console.log("Test of getLength:",param);});
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
   return cb(arr[arr.length-1]);
 }
+//Test of last
+last(items,param => console.log("Test of last:",param));
+
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x+y);
 }
+
+//Test of sumNums
+sumNums(2,2, function(param){console.log("Test of sumNums:",param)});
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x*y);
 }
+
+//Test of multiplyNums
+multiplyNums(1,-5, param => console.log("Test of multiplyNums:",param));
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  return cb(list.includes(item));
 }
+
+//Test of contains when item is not in list
+contains(5, [1,2,3,4], param => console.log("Test of contains when item is not in list (this should be false):", param));
+
+//Test of contains when item is in list
+contains(2, [1,2,3,4], param => console.log("Test of contains when item is in list (this should be true):", param));
+
 
 /* STRETCH PROBLEM */
 
@@ -56,4 +76,9 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  return cb(array.filter((item,index) => array.indexOf(item) === index))
 }
+
+//NB: This works because Array.indexOf(item) returns the first index value at which the item occurs.
+
+removeDuplicates([1,1,2,2, "Steve", "Steve"], param => console.log('Test of removeDuplicates:', param));
