@@ -80,5 +80,6 @@ function removeDuplicates(array, cb) {
 }
 
 //NB: This works because Array.indexOf(item) returns the first index value at which the item occurs.
-
-removeDuplicates([1,1,2,2, "Steve", "Steve"], param => console.log('Test of removeDuplicates:', param));
+let testArray = [1,1,2,2, "Steve", "Steve"]
+removeDuplicates(testArray, param => console.log('Test of removeDuplicates:', param));
+console.log("Original Array with Duplicates: ", testArray);
