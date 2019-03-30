@@ -49,5 +49,36 @@ We have learned that closures allow us to access values in scope that have alrea
 
 ## Stretch Goals
 
-* [ ] Go back through the stretch problems that you skipped over and complete as many as you can.
-* [ ] Look up what an IIFE is in JavaScript and experiment with them
+* [X] Go back through the stretch problems that you skipped over and complete as many as you can.
+* [X] Look up what an IIFE is in JavaScript and experiment with them
+
+
+
+# Thoughts on JavaScript II
+*Rough draft of thoughts for stand-up and retrospective forms*
+
+## What Did I Finish
+I finished the JavaScript II related assignment (+ stretch challenges) and read about IIFE's
+
+## What I Will Need to Finish Before Tomorrow
+I will need to start reading material for next week's assignments and maybe start work early. 
+
+## Blockers/Breakthroughs
+### Blockers:
+- I have a better understanding of closure, but would hardly call myself an expert. 
+- I occasionally forget the syntax rules for some of the array methods (I know what they do, but forget what exactly goes where)
+
+
+## Breakthroughs
+- Closures make a lot more sense now, and I have some idea of how powerful they are. 
+
+## What Went Well
+
+## What COuld Be better:
+More time could not have spent on real-life application of closures besides function factories and more advanced use cases for map() and filter() which used more parameters than currentValue.
+
+## Instructor Comments:
+Less time on digressions, reduce time spent answering interesting but digfressive questions 
+
+## What Else Should We KNow:
+This might be an edge case but for the question, "On a scale of 1-10, how likely are you to recommend Lambda School to a friend or colleague?", if one's colleagues/social circle already includes software engineers/web developers and/or persons who might not prefer the Lambda School remote learning approach, I'd give a rather low rating to this question. Maybe revise this question to say "On a scale of 1-10, how likely are you to recommend Lambda School to a friend or colleague who would be interested in learning software engineering/web development and would prefer a flexible remote solution?" Also maybe include N/A
