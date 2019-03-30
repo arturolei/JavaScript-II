@@ -6,11 +6,11 @@ const moduloNum = function(divisor) {
   }
 }
 
-const moduloSix = moduloNum(6);
-const moduloNine = moduloNum(9)
+const moduloSix = moduloNum(6);// closure with value of 6
+const moduloNine = moduloNum(9) //closure with value of 9
 
-console.log("Challenge 1 Test 1:",moduloSix(7));
-console.log("Challenge 1 Test 2:",moduloNine(31));
+console.log("Challenge 1 Test 1: 7 mod 6",moduloSix(7));
+console.log("Challenge 1 Test 2: 31 mod 9",moduloNine(31));
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
@@ -54,12 +54,40 @@ const counterFactory = () => {
     };
 };
 
-
+console.log("Challenge 3 Alternate: Create Counter Function with an Object that can increment and decrement")
 const myCounter = counterFactory();
-console.log(myCounter.decrement());
-console.log(myCounter.increment());
-console.log(myCounter.increment());
-console.log(myCounter.decrement());
-console.log(myCounter.decrement());
+console.log("Decrement:",myCounter.decrement());
+console.log("Increment:",myCounter.increment());
+console.log("Increment:",myCounter.increment());
+console.log("Decrement:",myCounter.decrement());
+console.log("Increment:",myCounter.increment());
+
+// ==== Challenge 3 Alternate: Counter function with an object that increment and decrement an initial value ====
 
 
+const counterFactory2 = (number) => {
+  // Return an object that has two methods called `increment` and `decrement`.
+  // `increment` should increment a counter variable in closure scope and return it.
+  // `decrement` should decrement the counter variable and return it.
+  return {
+   increment: function(){
+      number++
+      //console.log(num);
+      return number;
+
+    },
+    decrement: function(){
+      number--;
+      //console.log(num);
+      return number;
+    }
+    };
+};
+
+console.log("Challenge 3 Alternate Solution: Create Counter Function with an Object that can increment and decrement")
+const myCounter2 = counterFactory2(2);
+console.log("Decrement:",myCounter2.decrement());
+console.log("Increment:",myCounter2.increment());
+console.log("Increment:",myCounter2.increment());
+console.log("Decrement:",myCounter2.decrement());
+console.log("Increment:",myCounter2.increment());

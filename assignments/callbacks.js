@@ -64,10 +64,10 @@ function contains(item, list, cb) {
 }
 
 //Test of contains when item is not in list
-contains(5, [1,2,3,4], param => console.log("Test of contains when item is not in list (this should be false):", param));
+contains("Holy Grail", items, param => console.log("Test of contains when item is not in list (this should be false):", param));
 
 //Test of contains when item is in list
-contains(2, [1,2,3,4], param => console.log("Test of contains when item is in list (this should be true):", param));
+contains("Gum", items, param => console.log("Test of contains when item is in list (this should be true):", param));
 
 
 /* STRETCH PROBLEM */
